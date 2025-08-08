@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import PhoneMock from "@/components/landing/PhoneMock";
 
 const Hero = () => {
   return (
@@ -20,8 +19,20 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="mx-auto w-full max-w-sm transition-transform duration-300 will-change-transform hover:scale-[1.02]">
-            <PhoneMock />
+          <div className="mx-auto w-full max-w-sm perspective-1000">
+            <div className="rounded-[2rem] border border-border bg-card p-8 shadow-elevate hover:shadow-glow transition-transform duration-300 will-change-transform">
+              <div className="aspect-[9/19] w-full rounded-[1.5rem] bg-gradient-brand p-8 flex flex-col items-center justify-center text-primary-foreground">
+                <img
+                  src="/lovable-uploads/4ba0d2ec-0ca0-4680-8dc3-2ec35b99e0f7.png"
+                  alt="zenyAI receipt OCR app icon"
+                  className="h-20 w-20 mb-4"
+                  loading="lazy"
+                />
+                <p className="text-center text-base opacity-90">
+                  Point. Snap. Categorized.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
