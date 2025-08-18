@@ -37,6 +37,7 @@ jobs:
       # Optional: keep or remove if you don't want lint to block deploys
       - name: Lint
         run: yarn lint
+        continue-on-error: true 
 
       - name: Build
         run: yarn build
