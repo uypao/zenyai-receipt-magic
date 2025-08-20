@@ -13,7 +13,11 @@ const Footer = () => {
           />
           <span className="font-semibold">zenyAI</span>
         </div>
-        <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} zenyAI. All rights reserved.</p>
+        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+          <p>© {new Date().getFullYear()} zenyAI. All rights reserved.</p>
+          <a href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</a>
+          <a href="/leap-developments" className="hover:text-primary transition-colors">Company</a>
+        </div>
         <a href="#cta"><Button size="sm" variant="outline">Join waitlist</Button></a>
       </div>
     </footer>

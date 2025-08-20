@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "zenyAI — Simple AI OCR Bookkeeping";
+    document.title = "zenyAI — Download Today";
   }, []);
 
   const ld = {
