@@ -21,7 +21,7 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-3">
           <a href="#cta" className={cn("hidden sm:inline-flex")}> 
-            <Button variant="hero" size="sm">Get Early Access</Button>
+            <Button variant="hero" size="sm">Download Now!</Button>
           </a>
         </div>
       </nav>

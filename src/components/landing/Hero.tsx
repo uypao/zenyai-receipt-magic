@@ -13,7 +13,7 @@ const Hero = () => {
             zenyAI uses fast, accurate OCR and smart categorization to turn messy
             receipts into clean books—automatically.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 ">
             <a href="#cta">
               <img src="/lovable-uploads/appleDL.svg" alt="Apple Download" className="w-48 h-24 object-contain" />
             </a>
@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative">
-        <div className="mx-auto w-[80%] h-[60%]">
+        <div className="mx-auto w-[90%] h-[60%]">
           <img
             src="/lovable-uploads/hero.svg"
             alt="zenyAI receipt OCR app icon"
@@ -31,7 +31,7 @@ const Hero = () => {
             className="w-full h-full mb-4 object-contain"
             loading="lazy"
           />
-          <p className="text-center text-base opacity-90">
+          <p className="text-center text-base opacity-100 italic text-2xl md:text-2xl ">
             Point. Snap. Categorized.
           </p>
         </div>
