@@ -22,7 +22,8 @@ import { componentTagger } from "lovable-tagger";
 // }));
 
 export default defineConfig(({ mode }) => ({
-  base: '/', // root of your domain on Vercel; use '/subpath/' if you deploy under a path
+  // base: '/', // root of your domain on Vercel; use '/subpath/' if you deploy under a path
+  base: '/zenyai-receipt-magic/',
   server: {
     host: '::',
     port: 8080,
