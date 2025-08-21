@@ -36,5 +36,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/' // Since this will be the base directory
+  base: '/' //mode === 'development' ? '/' : '/zenyai-receipt-magic/'
 }));
