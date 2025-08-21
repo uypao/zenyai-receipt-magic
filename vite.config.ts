@@ -22,27 +22,19 @@ import { componentTagger } from "lovable-tagger";
 // }));
 
 export default defineConfig(({ mode }) => ({
-  // base: '/', // root of your domain on Vercel; use '/subpath/' if you deploy under a path
-  base: '/',
   server: {
-    host: '::',
+    host: "::",
     port: 8080,
-  },
-  preview: {
-    port: 4173,
-    strictPort: true,
-  },
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    target: 'es2019',
-    sourcemap: false,
   },
   plugins: [
     react(),
-    mode === 'development' && componentTagger(),
+    mode === 'development' &&
+    componentTagger(),
   ].filter(Boolean),
   resolve: {
-    alias: { "@": path.resolve(__dirname, "./src") },
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
+  base: '/' // Since this will be the base directory
 }));
