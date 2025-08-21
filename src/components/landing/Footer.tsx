@@ -18,7 +18,7 @@ const Footer = () => {
           <a href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</a>
           <a href="/leap-developments" className="hover:text-primary transition-colors">Company</a>
         </div>
-        <a href="#cta"><Button size="sm" variant="outline">Join waitlist</Button></a>
+        {/* <a href="#cta"><Button size="sm" variant="outline">Join waitlist</Button></a> */}
       </div>
     </footer>
   );
