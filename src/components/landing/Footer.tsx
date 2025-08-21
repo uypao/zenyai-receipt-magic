@@ -16,6 +16,7 @@ const Footer = () => {
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} zenyAI. All rights reserved.</p>
           <a href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</a>
+          <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a>
           <a href="/leap-developments" className="hover:text-primary transition-colors">Company</a>
         </div>
         {/* <a href="#cta"><Button size="sm" variant="outline">Join waitlist</Button></a> */}
