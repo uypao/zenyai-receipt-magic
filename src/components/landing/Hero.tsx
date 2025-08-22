@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto py-20 md:py-28 grid md:grid-cols-2 gap-20 items-center">
         <div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-            Simplicity test for your receipts and bookkeeping
+            Simplicity 1 for your receipts and bookkeeping
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-prose">
             zenyAI uses fast, accurate OCR and smart categorization to turn messy
