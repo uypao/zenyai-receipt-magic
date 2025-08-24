@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-brand opacity-20" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-brand opacity-80" aria-hidden="true" />
       <div className="container mx-auto py-20 md:py-28 grid md:grid-cols-2 gap-20 items-center">
-        <div>
+        <div className="z-[1]">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-            Simplicity 1 for your receipts and bookkeeping
+            Simplicity for your receipts and bookkeeping
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-prose">
             zenyAI uses fast, accurate OCR and smart categorization to turn messy
