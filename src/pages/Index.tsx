@@ -34,10 +34,10 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">Built with privacy and accuracy in mind</h2>
             <p className="text-muted-foreground mb-8">Launching worldwide on App Store & Google Play.</p>
             <div className="flex flex-wrap gap-3 justify-center">
-            <a href="#cta">
+            <a href="https://apps.apple.com/us/app/zenyai/id6446255216">
               <img src="/lovable-uploads/appleDL.svg" alt="Apple Download" className="w-48 h-24 object-contain" />
             </a>
-            <a href="#how-it-works">
+            <a href="https://play.google.com/store/apps/details?id=com.allan.app">
               <img src="/lovable-uploads/googleDL.png" alt="Google Download" className="w-48 h-24 object-contain" />
             </a>
           </div>

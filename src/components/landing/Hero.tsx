@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto py-20 md:py-28 grid md:grid-cols-2 gap-20 items-center">
         <div className="z-[1]">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-            Simplicity for your receipts and bookkeeping
+            #1 Receipt Scanner & Bookkeeping Assistant
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-prose">
             zenyAI uses fast, accurate OCR and smart categorization to turn messy
@@ -17,7 +17,7 @@ const Hero = () => {
             <a href="#cta">
               <img src="/lovable-uploads/appleDL.svg" alt="Apple Download" className="w-48 h-24 object-contain" />
             </a>
-            <a href="#how-it-works">
+            <a href="https://play.google.com/store/apps/details?id=com.allan.app">
               <img src="/lovable-uploads/googleDL.png" alt="Google Download" className="w-48 h-24 object-contain" />
             </a>
           </div>
