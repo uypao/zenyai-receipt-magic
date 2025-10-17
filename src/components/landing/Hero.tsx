@@ -1,55 +1,48 @@
 import { Button } from "@/components/ui/button";
+import { Mail, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-brand opacity-80" aria-hidden="true" />
-      <div className="container mx-auto py-20 md:py-28 grid md:grid-cols-2 gap-20 items-center">
-        <div className="z-[1]">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-            #1 Receipt Scanner & Bookkeeping Assistant
-          </h1>
-          <p className="text-lg text-muted-foreground mb-8 max-w-prose">
-            zenyAI uses fast, accurate OCR and smart categorization to turn messy
-            receipts into clean books—automatically.
-          </p>
-          <div className="flex flex-wrap gap-3 ">
-            <a href="#cta">
-              <img src="/lovable-uploads/appleDL.svg" alt="Apple Download" className="w-48 h-24 object-contain" />
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.allan.app">
-              <img src="/lovable-uploads/googleDL.png" alt="Google Download" className="w-48 h-24 object-contain" />
-            </a>
-          </div>
-        </div>
-        <div className="relative">
-        <div className="mx-auto w-[90%] h-[60%]">
-          <img
-            src="/lovable-uploads/hero.svg"
-            alt="zenyAI receipt OCR app icon"
-            // className="h-20 w-20 mb-4"
-            className="w-full h-full mb-4 object-contain"
-            loading="lazy"
-          />
-          <p className="text-center text-base opacity-100 italic text-2xl md:text-2xl ">
-            Point. Snap. Categorized.
-          </p>
-        </div>
-          {/* <div className="mx-auto w-full max-w-sm perspective-1000">
-            <div className="rounded-[2rem] border border-border bg-card p-8 shadow-elevate hover:shadow-glow transition-transform duration-300 will-change-transform">
-              <div className="aspect-[9/19] w-full rounded-[1.5rem] bg-gradient-brand p-8 flex flex-col items-center justify-center text-primary-foreground">
-                <img
-                  src="/lovable-uploads/hero.svg"
-                  alt="zenyAI receipt OCR app icon"
-                  className="h-20 w-20 mb-4"
-                  loading="lazy"
-                />
-                <p className="text-center text-base opacity-90">
-                  Point. Snap. Categorized.
-                </p>
-              </div>
+    <section className="pt-32 pb-20 gradient-subtle">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
+              <Sparkles className="h-4 w-4" />
+              <span className="text-sm font-medium">AI-Powered Bookkeeping</span>
             </div>
-          </div> */}
+
+            <h1 className="text-5xl lg:text-6xl font-bold text-balance leading-tight">
+              Smarter Bookkeeping.{" "}
+              <span className="gradient-hero bg-clip-text text-transparent">
+                Zero Manual Work.
+              </span>
+            </h1>
+
+            <p className="text-xl text-muted-foreground text-balance max-w-2xl">
+              Meet zenyAI — your personal bookkeeping assistant. Automatically scan Gmail or Outlook 
+              for receipts, extract details with AI, and organize everything for tax season in seconds.
+            </p>
+
+            <div className="flex items-center">
+             <Button variant="link" onClick={() => window.open('https://apps.apple.com/us/app/zenyai-expense-tracker/id6751862953?platform=iphone')}>
+               <img src="/lovable-uploads/appleDL.svg" className="h-12" />  
+             </Button> 
+            
+             <Button variant="link" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.allan.app')}>
+               <img src="/lovable-uploads/googleDL.png" className="h-12 " />
+             </Button>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-950 to-black opacity-10 blur-3xl rounded-full" />
+            <img 
+              src="/lovable-uploads/hero.png" 
+              alt="AI scanning receipts automatically" 
+              className="relative z-10 w-full h-auto rounded-2xl shadow-2xl"
+            />
+          </div>
         </div>
       </div>
     </section>

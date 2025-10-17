@@ -5,6 +5,8 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
+import { Testimonial } from "@/components/landing/Testimonial";
+import { CTA } from "@/components/landing/CTA";
 
 const Index = () => {
   useEffect(() => {
@@ -23,28 +25,17 @@ const Index = () => {
 
   return (
     <>
-      <link rel="icon" href="/favicon.ico" />
+      <div className="min-h-screen">
       <Header />
       <main>
         <Hero />
         <Features />
         <HowItWorks />
-        <section id="cta" className="py-16 md:py-24">
-          <div className="container mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">Built with privacy and accuracy in mind</h2>
-            <p className="text-muted-foreground mb-8">Launching worldwide on App Store & Google Play.</p>
-            <div className="flex flex-wrap gap-3 justify-center">
-            <a href="https://apps.apple.com/us/app/zenyai/id6446255216">
-              <img src="/lovable-uploads/appleDL.svg" alt="Apple Download" className="w-48 h-24 object-contain" />
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.allan.app">
-              <img src="/lovable-uploads/googleDL.png" alt="Google Download" className="w-48 h-24 object-contain" />
-            </a>
-          </div>
-          </div>
-        </section>
+        <Testimonial />
+        <CTA />
       </main>
       <Footer />
+    </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
     </>
   );

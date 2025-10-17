@@ -152,7 +152,7 @@ const Company = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <img
-                src="/lovable-uploads/4ba0d2ec-0ca0-4680-8dc3-2ec35b99e0f7.png"
+                src="/lovable-uploads/app_v2.png"
                 alt="zenyAI Technologies logo"
                 className="h-6 w-6"
               />
